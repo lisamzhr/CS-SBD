@@ -165,7 +165,46 @@ export default function Home() {
             Buy me 
           </button>
         </section>
+        {/* FOOTER */}
+        <footer className="bg-[#2a1510] text-[#FDF7D3] px-10 py-12 mt-8">
+          <div className="max-w-6xl mx-auto grid grid-cols-3 gap-10">
 
+            {/* Brand */}
+            <div className="flex flex-col gap-4">
+              <Image src="/images/logo.png" alt="Logo" width={120} height={40} />
+              <p className="text-sm opacity-70 leading-relaxed">
+                Cokelat kebanggaan Indonesia yang udah menemani setiap momen manis sejak 1980
+              </p>
+            </div>
+
+            {/* Navigasi */}
+            <div className="flex flex-col gap-3">
+              <h4 className="font-black text-lg text-gradient-cream">Navigasi</h4>
+              <a href="#" className="text-sm opacity-70 hover:opacity-100 hover:text-[#FFD700] transition">Beranda</a>
+              <a href="#about" className="text-sm opacity-70 hover:opacity-100 hover:text-[#FFD700] transition">About</a>
+              <a href="#product" className="text-sm opacity-70 hover:opacity-100 hover:text-[#FFD700] transition">Product</a>
+            </div>
+
+            {/* Kontak */}
+            <div className="flex flex-col gap-3">
+              <h4 className="font-black text-lg text-gradient-cream">Hubungi Kami</h4>
+              <p className="text-sm opacity-70">silverqueen@lisa.com</p>
+              <p className="text-sm opacity-70">+62 812-3456-7890</p>
+              <p className="text-sm opacity-70">Setiabudi, Indonesia</p>
+              <div className="flex gap-4 mt-2">
+                <a href="#" className="text-sm opacity-70 hover:opacity-100 hover:text-[#FFD700] transition">Instagram</a>
+                <a href="#" className="text-sm opacity-70 hover:opacity-100 hover:text-[#FFD700] transition">Twitter</a>
+                <a href="#" className="text-sm opacity-70 hover:opacity-100 hover:text-[#FFD700] transition">TikTok</a>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Garis bawah */}
+          <div className="border-t border-[#FDF7D3]/20 mt-10 pt-6 text-center text-sm opacity-50">
+            © 2025 SilverQueen. All rights reserved. Made with in Indonesia.
+          </div>
+        </footer>
       </main>
     </>
   );
